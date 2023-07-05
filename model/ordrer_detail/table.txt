@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS `order_detail`;
+CREATE TABLE IF NOT EXISTS `order_detail` (
+  `order_detail_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'รหัสorder_detail',
+  `order_id` int(11) COLLATE utf8_bin NOT NULL COMMENT 'รหัสการซื้อ',
+  `product_attr_id` int(11) COLLATE utf8_bin NOT NULL COMMENT 'รหัสสินค้า',
+  `qty` int(11) COLLATE utf8_bin NOT NULL COMMENT 'จำนวนสินค้า',
+  PRIMARY KEY (`order_detail_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
